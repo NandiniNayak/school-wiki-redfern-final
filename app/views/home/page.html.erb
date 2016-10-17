@@ -1,0 +1,13 @@
+<h1>Cyber Library</h1>
+<% if user_signed_in? %>
+  <%= current_user.email%>
+<% end %>
+<ol>
+  <li>Log in with school email</li>
+  <li>Filter by year group</li>
+  <li>Open the page for your subject/class</li>
+  <li>Submit/Upload the post with the resource</li>
+</ol>
+
+<!-- We need to be able to create a subject for both year 9 and 10 -->
+<%= link_to 'See Subjects', subjects_path %>
