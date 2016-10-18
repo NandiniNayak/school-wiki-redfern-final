@@ -1,7 +1,5 @@
 <h1>Cyber Library</h1>
-<% if user_signed_in? %>
-  <%= current_user.email%>
-<% end %>
+
 <ol>
   <li>Log in with school email</li>
   <li>Filter by year group</li>
@@ -11,3 +9,26 @@
 
 <!-- We need to be able to create a subject for both year 9 and 10 -->
 <%= link_to 'See Subjects', subjects_path %>
+
+<div class="row">
+  <div class="col-md-4">
+    <a href="/subjects?year=7">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 7</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="col-md-4">
+    <a href="/subjects?year=8">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 8</h1>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+
+
