@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.text :summary
       t.string :resource_type
       t.string :file_url
-      t.boolean :approved
+      t.boolean :approved, default: false
       t.references :user, index: true, foreign_key: true
       t.references :subject, index: true, foreign_key: true
 
