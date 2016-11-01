@@ -7,7 +7,7 @@
     <%= f.input :resource_type, collection: [:ClassNotes, :StudyNotes, :Assignments] %>
     <%= f.input :file_url %>
     <%#= f.association :user %>
-    <%= hidden_field :subject_id, :value => params[:subject_id]%>
+    <%= f.hidden_field :subject_id, :value => params[:subject_id]%>
   </div>
 
   <div class="form-actions">
