@@ -6,6 +6,8 @@ gem 'rails', '4.2.6'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'devise'
+gem 'acts_as_votable'
+gem  'font-awesome-sass'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets

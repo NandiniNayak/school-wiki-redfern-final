@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    member do
+      put "like", to: "posts#vote"
+    end 
+  end
   resources :subjects
   devise_for :users
   root 'home#page'

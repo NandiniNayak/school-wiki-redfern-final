@@ -1,24 +1,54 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  background-color: #86bedc;
+}
+
+p {
+  color: #EE396E;
+}
+
+h1 {
+  color: #cb2e5b;
+}
+
+.alt-bg {
+  background-color: #fbd7df;
+}
+// Classes start with a . in css
 
 .year-square {
   height: 150px;
   width: 100%;
   background-color: bisque;
-  border-radius: 4px;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 10px;
   border: 1px solid #F5CE9F;
   margin-bottom: 10px;
 }
 
 .year-square:hover {
-  background-color: #F5CE9F;
+  background-color: #C39BD3;
 }
 
 .year-text {
   color: violet;
   padding-top: 31px;
 }
-.post-group{
-  border: 1px solid cyan;
+.post-group {
+  border: 15px solid purple;
+  
+}
 
+.post-group p{
+  font-size: 15px;
+  color: blue;
+  
+}
+.post-title{
+  color: purple;
+  font-size: 30px;
 }

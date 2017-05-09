@@ -1,14 +1,4 @@
-<h1>Cyber Library</h1>
-
-<ol>
-  <li>Log in with school email</li>
-  <li>Filter by year group</li>
-  <li>Open the page for your subject/class</li>
-  <li>Submit/Upload the post with the resource</li>
-</ol>
-
-<!-- We need to be able to create a subject for both year 9 and 10 -->
-<%= link_to 'See Subjects', subjects_path %>
+<h1>Choose your year</h1>
 
 <div class="row">
   <div class="col-md-4">
@@ -26,9 +16,73 @@
       </div>
     </a>
   </div>
+  
+  <div class="col-md-4">
+    <a href="/subjects?year=8">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 9</h1>
+      </div>
+    </a>
+  </div>
 </div>
 
+<div class="row">
+  <div class="col-md-4">
+    <a href="/subjects?year=7">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 10</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="col-md-4">
+    <a href="/subjects?year=7">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 11</h1>
+      </div>
+    </a>
+  </div>
+  
+  <div class="col-md-4">
+    <a href="/subjects?year=7">
+      <div class="year-square text-center">
+        <h1 class="year-text">Year 12</h1>
+      </div>
+    </a>
+  </div>
+  
+  </div>
+
+<h1>About</h1>
+
+<h3>What is this site?</h3>
+<p>This website has been designed so that students of my school can post helpful school resources.</p>
 
 
+<h3>Who are we?</h3>
+<p>We are a group of girls from Year 8 and 10</p>
 
+
+<h3>How did we make this?</h3>
+<p>We made this with the help of instructors from Coder Factory</p>
+
+<h3>Our School</h3>
+<p>We come from Sarah Redfern High School</p>
+<img src="http://www.sarahredfe-h.schools.nsw.edu.au/cmsresources/images/school_logo_1318223210101_1318223210102_m.jpg" width="200px" />
+
+
+<h3>Our Sponsors</h3>
+<p>We are sponsored by Commonwealth Bank</p>
+<img src="https://www.marrickvillemetro.com.au/Marrickville/media/contents/04_Stores/01_Store_Logos/Commonwealth-Bank_logo.jpg?width=1452&height=1036&ext=.jpg" width=200px />
+
+<ol>
+  <h1>Features</h1>
+  <li>Log in with school email</li>
+  <li>Filter by year group</li>
+  <li>Open the page for your subject/class</li>
+  <li>Submit/Upload the post with the resource</li>
+</ol>
+
+<!-- We need to be able to create a subject for both year 9 and 10 -->
+<%= link_to 'See Subjects', subjects_path %>
 
